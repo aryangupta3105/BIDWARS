@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Mumbai Indians",
+    "personality": "Mumbai Indians: data-driven, pays premium for proven match-winners, avoids young unknowns",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["Bowler", "All-Rounder"],
+    "maxBid": 1800
+  },
+  {
+    "name": "Chennai Super Kings",
+    "personality": "CSK: values experience and loyalty, overpays for ex-CSK players, slow bidder",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["Batsman", "Wicketkeeper-Batsman"],
+    "maxBid": 1500
+  },
+  {
+    "name": "Royal Challengers Bengaluru",
+    "personality": "RCB: star-obsessed, overbids on big names, neglects bowling depth",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["Batsman", "All-Rounder"],
+    "maxBid": 2200
+  },
+  {
+    "name": "Kolkata Knight Riders",
+    "personality": "KKR: shrewd analytics team, hunts undervalued players, won't chase",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["All-Rounder", "Bowler"],
+    "maxBid": 1200
+  },
+  {
+    "name": "Delhi Capitals",
+    "personality": "DC: aggressive early, runs out of budget late, youth-focused",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["Batsman", "Bowler"],
+    "maxBid": 1400
+  },
+  {
+    "name": "Punjab Kings",
+    "personality": "PBKS: inconsistent, sometimes goes berserk on one player then disappears",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["All-Rounder", "Batsman"],
+    "maxBid": 2500
+  },
+  {
+    "name": "Rajasthan Royals",
+    "personality": "RR: value hunters, loves T20 specialists from non-India leagues",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["Bowler", "Batsman"],
+    "maxBid": 1100
+  },
+  {
+    "name": "Sunrisers Hyderabad",
+    "personality": "SRH: aggressive, top-order fixated, pays huge for openers",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["Batsman", "Wicketkeeper-Batsman"],
+    "maxBid": 2000
+  },
+  {
+    "name": "Gujarat Titans",
+    "personality": "GT: calm and calculated, builds around a strong core, never panics",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["All-Rounder", "Bowler"],
+    "maxBid": 1300
+  },
+  {
+    "name": "Lucknow Super Giants",
+    "personality": "LSG: reactive, fills gaps last-minute, mid-tier bids on everything",
+    "remainingBudget": 10000,
+    "currentRoster": [],
+    "targetGaps": ["Batsman", "Bowler", "All-Rounder"],
+    "maxBid": 1000
+  }
+]

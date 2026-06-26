@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Virat Kohli",
+    "role": "Batsman",
+    "nationality": "Indian",
+    "basePrice": 200,
+    "stats": {
+      "matches": 240,
+      "runs": 7500,
+      "avg": 38.5,
+      "sr": 135.2,
+      "wickets": 4,
+      "economy": 8.8
+    },
+    "lastTeam": "RCB"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "role": "Bowler",
+    "nationality": "Indian",
+    "basePrice": 200,
+    "stats": {
+      "matches": 130,
+      "runs": 80,
+      "avg": 10.1,
+      "sr": 90.0,
+      "wickets": 150,
+      "economy": 7.4
+    },
+    "lastTeam": "MI"
+  },
+  {
+    "name": "MS Dhoni",
+    "role": "Wicketkeeper-Batsman",
+    "nationality": "Indian",
+    "basePrice": 200,
+    "stats": {
+      "matches": 250,
+      "runs": 5000,
+      "avg": 39.0,
+      "sr": 137.5,
+      "wickets": 0,
+      "economy": 0
+    },
+    "lastTeam": "CSK"
+  },
+  {
+    "name": "Glenn Maxwell",
+    "role": "All-Rounder",
+    "nationality": "Overseas",
+    "basePrice": 200,
+    "stats": {
+      "matches": 120,
+      "runs": 2800,
+      "avg": 26.5,
+      "sr": 157.3,
+      "wickets": 35,
+      "economy": 8.3
+    },
+    "lastTeam": "RCB"
+  },
+  {
+    "name": "Rashid Khan",
+    "role": "Bowler",
+    "nationality": "Overseas",
+    "basePrice": 200,
+    "stats": {
+      "matches": 110,
+      "runs": 450,
+      "avg": 15.0,
+      "sr": 140.0,
+      "wickets": 140,
+      "economy": 6.6
+    },
+    "lastTeam": "GT"
+  },
+  {
+    "name": "Suresh Raina",
+    "role": "Batsman",
+    "nationality": "Indian",
+    "basePrice": 150,
+    "stats": {
+      "matches": 205,
+      "runs": 5500,
+      "avg": 32.5,
+      "sr": 136.7,
+      "wickets": 25,
+      "economy": 7.3
+    },
+    "lastTeam": "CSK"
+  },
+  {
+    "name": "Pat Cummins",
+    "role": "All-Rounder",
+    "nationality": "Overseas",
+    "basePrice": 200,
+    "stats": {
+      "matches": 50,
+      "runs": 400,
+      "avg": 18.2,
+      "sr": 150.0,
+      "wickets": 60,
+      "economy": 8.5
+    },
+    "lastTeam": "SRH"
+  },
+  {
+    "name": "Rinku Singh",
+    "role": "Batsman",
+    "nationality": "Indian",
+    "basePrice": 100,
+    "stats": {
+      "matches": 40,
+      "runs": 800,
+      "avg": 35.5,
+      "sr": 145.8,
+      "wickets": 0,
+      "economy": 0
+    },
+    "lastTeam": "KKR"
+  },
+  {
+    "name": "Mitchell Starc",
+    "role": "Bowler",
+    "nationality": "Overseas",
+    "basePrice": 200,
+    "stats": {
+      "matches": 45,
+      "runs": 120,
+      "avg": 12.0,
+      "sr": 110.0,
+      "wickets": 55,
+      "economy": 8.2
+    },
+    "lastTeam": "KKR"
+  },
+  {
+    "name": "Travis Head",
+    "role": "Batsman",
+    "nationality": "Overseas",
+    "basePrice": 200,
+    "stats": {
+      "matches": 35,
+      "runs": 1100,
+      "avg": 31.4,
+      "sr": 162.0,
+      "wickets": 2,
+      "economy": 9.0
+    },
+    "lastTeam": "SRH"
+  },
+  {
+    "name": "Yashasvi Jaiswal",
+    "role": "Batsman",
+    "nationality": "Indian",
+    "basePrice": 150,
+    "stats": {
+      "matches": 45,
+      "runs": 1400,
+      "avg": 34.0,
+      "sr": 148.5,
+      "wickets": 0,
+      "economy": 0
+    },
+    "lastTeam": "RR"
+  },
+  {
+    "name": "Nicholas Pooran",
+    "role": "Wicketkeeper-Batsman",
+    "nationality": "Overseas",
+    "basePrice": 200,
+    "stats": {
+      "matches": 70,
+      "runs": 1500,
+      "avg": 28.0,
+      "sr": 155.0,
+      "wickets": 0,
+      "economy": 0
+    },
+    "lastTeam": "LSG"
+  },
+  {
+    "name": "Hardik Pandya",
+    "role": "All-Rounder",
+    "nationality": "Indian",
+    "basePrice": 200,
+    "stats": {
+      "matches": 125,
+      "runs": 2300,
+      "avg": 30.2,
+      "sr": 145.0,
+      "wickets": 65,
+      "economy": 8.1
+    },
+    "lastTeam": "MI"
+  },
+  {
+    "name": "Anuj Rawat",
+    "role": "Wicketkeeper-Batsman",
+    "nationality": "Indian",
+    "basePrice": 50,
+    "stats": {
+      "matches": 25,
+      "runs": 300,
+      "avg": 20.0,
+      "sr": 120.0,
+      "wickets": 0,
+      "economy": 0
+    },
+    "lastTeam": "RCB"
+  },
+  {
+    "name": "Jake Fraser-McGurk",
+    "role": "Batsman",
+    "nationality": "Overseas",
+    "basePrice": 75,
+    "stats": {
+      "matches": 15,
+      "runs": 450,
+      "avg": 35.0,
+      "sr": 190.0,
+      "wickets": 0,
+      "economy": 0
+    },
+    "lastTeam": "DC"
+  }
+]

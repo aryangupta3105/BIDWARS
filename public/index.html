@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>IPL Mega Auction 2025 | Auction Central</title>
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1@24,0,0,0" rel="stylesheet"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Custom theme overrides -->
+  <link rel="stylesheet" href="style.css"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#181a2c",
+            "surface-container": "#1c1e30",
+            "secondary": "#e9c349",
+            "error": "#ffb4ab",
+            "rr-primary": "#E2007C",
+            "on-surface-variant": "#c3c6d7",
+            "primary-container": "#1a5fe8",
+            "on-primary-container": "#e6e9ff",
+            "on-secondary-fixed-variant": "#574500",
+            "rtm-purple": "#8B5CF6",
+            "surface-card": "#0C1130",
+            "surface-container-lowest": "#0b0d1e",
+            "secondary-fixed": "#ffe088",
+            "inverse-primary": "#0053d9",
+            "mi-primary": "#004BA0",
+            "pbks-primary": "#D71920",
+            "border-strong": "#253070",
+            "timer-safe": "#00C787",
+            "on-error": "#690005",
+            "surface-dim": "#101223",
+            "on-tertiary": "#5a1c00",
+            "srh-primary": "#F26522",
+            "gold-light": "#FFD966",
+            "csk-primary": "#F9CD05",
+            "kkr-primary": "#3A225D",
+            "on-secondary-fixed": "#241a00",
+            "on-primary": "#002a77",
+            "on-primary-fixed": "#00174a",
+            "tertiary-fixed": "#ffdbce",
+            "on-secondary": "#3c2f00",
+            "on-tertiary-fixed-variant": "#7f2b00",
+            "surface": "#101223",
+            "surface-container-highest": "#313346",
+            "surface-raised": "#111840",
+            "danger": "#FF3B3B",
+            "error-container": "#93000a",
+            "rcb-primary": "#EC1C24",
+            "secondary-container": "#af8d11",
+            "tertiary-container": "#b94200",
+            "on-error-container": "#ffdad6",
+            "background": "#101223",
+            "lsg-primary": "#A72B2A",
+            "gt-primary": "#1C1C84",
+            "surface-container-high": "#27293b",
+            "surface-variant": "#313346",
+            "primary": "#b3c5ff",
+            "outline-variant": "#434655",
+            "tertiary-fixed-dim": "#ffb599",
+            "on-background": "#e0e0f9",
+            "outline": "#8d90a0",
+            "on-primary-fixed-variant": "#003ea7",
+            "inverse-on-surface": "#2d2f42",
+            "on-secondary-container": "#342800",
+            "tertiary": "#ffb599",
+            "dc-primary": "#00008B",
+            "timer-warn": "#FF8C00",
+            "gold-deep": "#B8960E",
+            "secondary-fixed-dim": "#e9c349",
+            "on-tertiary-container": "#ffe5dc",
+            "inverse-surface": "#e0e0f9",
+            "gold-mid": "#F4B942",
+            "on-surface": "#e0e0f9",
+            "surface-bright": "#36384b",
+            "surface-tint": "#b3c5ff",
+            "border-default": "#1A2455",
+            "primary-fixed": "#dbe1ff",
+            "on-tertiary-fixed": "#370e00",
+            "primary-fixed-dim": "#b3c5ff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "margin-desktop": "40px",
+            "unit": "4px",
+            "margin-mobile": "16px",
+            "section-gap": "32px",
+            "gutter": "24px"
+          },
+          fontFamily: {
+            "stat-value": ["JetBrains Mono", "monospace"],
+            "label-caps": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "stat-display": ["JetBrains Mono", "monospace"],
+            "headline-lg": ["Inter", "sans-serif"],
+            "headline-sm": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "stat-value": ["20px", { "lineHeight": "1.2", "fontWeight": "600" }],
+            "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+            "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "stat-display": ["40px", { "lineHeight": "1", "letterSpacing": "-0.05em", "fontWeight": "700" }],
+            "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-sm": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="text-on-surface h-screen w-screen overflow-hidden flex flex-col bg-background">
+
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop h-16 bg-surface-container-low border-b border-border-default">
+    <div class="flex items-center gap-8">
+      <span class="font-headline-sm text-headline-sm font-black text-on-surface">IPL MEGA AUCTION 2025</span>
+      <div id="nav-categories" class="flex h-16">
+        <button id="tab-capped" class="h-full px-4 flex items-center justify-center font-label-caps text-label-caps text-primary border-b-2 border-primary font-bold bg-surface-container-low transition-colors">
+          Capped Players
+        </button>
+        <button id="tab-uncapped" class="h-full px-4 flex items-center justify-center font-label-caps text-label-caps text-on-surface-variant hover:bg-surface-raised transition-colors">
+          Uncapped
+        </button>
+        <button id="tab-overseas" class="h-full px-4 flex items-center justify-center font-label-caps text-label-caps text-on-surface-variant hover:bg-surface-raised transition-colors">
+          Overseas
+        </button>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-6">
+      <div class="bg-surface-raised border border-gold-mid text-gold-mid px-4 py-1 rounded-full font-label-caps text-label-caps flex items-center gap-2 shadow-[0_0_10px_rgba(244,185,66,0.2)]">
+        <span class="w-2 h-2 rounded-full bg-gold-mid"></span>
+        <span id="header-set-label">PREMIUM PLAYERS</span>
+      </div>
+      <!-- User Controlled Team status overview -->
+      <div id="header-user-status" class="flex items-center gap-4 bg-surface-container px-4 py-2 rounded-lg border border-border-default">
+        <span id="header-user-purse" class="font-stat-value text-stat-value text-secondary text-sm">Purse: ₹100.00 Cr</span>
+        <span class="w-px h-4 bg-border-default"></span>
+        <span id="header-user-squad" class="font-stat-value text-stat-value text-on-surface-variant text-[14px]">Squad: 0/25</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SideNavBar -->
+  <nav class="fixed left-0 top-16 h-[calc(100vh-64px-48px)] flex flex-col py-4 w-64 bg-surface-container border-r border-border-default z-40">
+    <!-- Active Bidder status -->
+    <div class="flex items-center gap-3 px-4 mb-8">
+      <div id="sidebar-team-logo" class="w-12 h-12 rounded-full border border-border-strong bg-slate-700 flex items-center justify-center font-bold text-sm text-white">MI</div>
+      <div class="flex flex-col">
+        <span id="sidebar-team-name" class="font-headline-sm text-headline-sm text-mi-primary text-[16px] font-extrabold truncate w-[160px]">Mumbai Indians</span>
+        <span id="sidebar-team-role-label" class="font-body-md text-body-md text-on-surface-variant text-[12px] opacity-70">Simulation Bidder</span>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="flex flex-col gap-1 w-full" id="sidebar-nav-tabs">
+      <button id="nav-btn-auction" class="flex items-center gap-3 w-full bg-surface-raised text-primary border-l-4 border-primary px-4 py-3 transition-all duration-200 ease-in-out">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">gavel</span>
+        <span class="font-label-caps text-label-caps text-xs">Live Auction</span>
+      </button>
+      <button id="nav-btn-squad" class="flex items-center gap-3 w-full text-on-surface-variant px-4 py-3 hover:bg-surface-raised hover:text-on-surface transition-all duration-200 ease-in-out border-l-4 border-transparent">
+        <span class="material-symbols-outlined">groups</span>
+        <span class="font-label-caps text-label-caps text-xs">Squad Manager</span>
+      </button>
+    </div>
+
+    <!-- Simulation settings panel placed at bottom -->
+    <div class="px-4 mt-auto mb-4 flex flex-col gap-3">
+      <div class="w-full h-px bg-border-default mb-1"></div>
+      <span class="font-label-caps text-[10px] text-on-surface-variant tracking-widest font-bold uppercase">Simulation Panel</span>
+      
+      <!-- Engine selector -->
+      <div class="flex flex-col gap-1 w-full text-xs">
+        <label for="select-mode" class="font-medium tracking-wider text-[9px] text-on-surface-variant uppercase">Engine Mode:</label>
+        <select id="select-mode" class="bg-surface-raised text-white border border-border-default rounded px-2 py-1 outline-none cursor-pointer text-[11px] w-full">
+          <option value="openai">OpenAI GPT-4o API</option>
+          <option value="local">Local Heuristics (Offline)</option>
+        </select>
+      </div>
+
+      <!-- User Franchise selector -->
+      <div class="flex flex-col gap-1 w-full text-xs">
+        <label for="select-user-franchise" class="font-medium tracking-wider text-[9px] text-on-surface-variant uppercase">Your Franchise:</label>
+        <select id="select-user-franchise" class="bg-surface-raised text-white border border-border-default rounded px-2 py-1 outline-none cursor-pointer text-[11px] w-full">
+          <option value="">Spectator (All AI)</option>
+          <option value="Mumbai Indians">Mumbai Indians (MI)</option>
+          <option value="Chennai Super Kings">Chennai Super Kings (CSK)</option>
+          <option value="Royal Challengers Bengaluru">Royal Challengers Bengaluru (RCB)</option>
+          <option value="Kolkata Knight Riders">Kolkata Knight Riders (KKR)</option>
+          <option value="Delhi Capitals">Delhi Capitals (DC)</option>
+          <option value="Punjab Kings">Punjab Kings (PBKS)</option>
+          <option value="Rajasthan Royals">Rajasthan Royals (RR)</option>
+          <option value="Sunrisers Hyderabad">Sunrisers Hyderabad (SRH)</option>
+          <option value="Gujarat Titans">Gujarat Titans (GT)</option>
+          <option value="Lucknow Super Giants">Lucknow Super Giants (LSG)</option>
+        </select>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="grid grid-cols-3 gap-1.5 mt-1">
+        <button id="btn-step" class="bg-primary-container text-on-primary-container hover:bg-primary transition-all rounded py-2 text-[10px] font-bold uppercase tracking-wider text-center flex items-center justify-center gap-1 shadow-md shadow-primary-container/10">
+          <span class="btn-icon">⚡</span>
+          <span id="btn-step-text">Step</span>
+        </button>
+        <button id="btn-autoplay" class="bg-surface-raised border border-border-strong text-white hover:bg-surface-bright transition-all rounded py-2 text-[10px] font-bold uppercase tracking-wider text-center flex items-center justify-center gap-1">
+          <span class="btn-icon">▶</span>
+          <span id="btn-autoplay-text">Auto</span>
+        </button>
+        <button id="btn-reset" class="bg-red-500/10 border border-red-500/20 text-danger hover:bg-red-500/20 transition-all rounded py-2 text-[10px] font-bold uppercase tracking-wider text-center flex items-center justify-center gap-1">
+          <span class="btn-icon">🔄</span>
+          <span>Reset</span>
+        </button>
+      </div>
+      <div id="api-status" class="flex items-center gap-1.5 text-[9px] font-semibold text-primary px-1">
+        <span class="w-1.5 h-1.5 rounded-full bg-tertiary status-indicator"></span>
+        <span id="api-text">API: Offline</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Grid -->
+  <main class="fixed top-16 left-64 right-0 h-[calc(100vh-64px-48px)] p-gutter flex gap-gutter bg-background z-30">
+    
+    <!-- Left Column: Player Hero (300px) -->
+    <section id="pane-player-hero" class="w-[300px] flex flex-col h-full gap-4">
+      <div class="relative w-full h-[360px] md:h-[400px] rounded-xl overflow-hidden bg-surface-card border border-border-strong flex-shrink-0 group">
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/60 to-transparent z-10"></div>
+        <img id="player-headshot" class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" alt="Player Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_R_5u6nnATF4OnxBYhdYUfjEhZLHnaEcAAVPoiPwIqhy2x-uYndgpTM2nxbk1QEJm0zebnwlIzINP6g3uVhRkpuoJoSP0N1Ypv37yaWS0Ofx7HFNLCIDqmD9JVZAq3XiSMw51C6qVBmYZdPkaiDNPNU08C4P_HVlioT_px7-3Ej05QUhl_29EMltFn4FceljUTb1zxPfRYMDtukjUqcknxa3h6q1pTIZcNDapyYy_4zoc3vodTr8GScseEItm-ut5ERZSKwDPpHU"/>
+        <div class="absolute bottom-0 left-0 w-full p-4 z-20 flex flex-col">
+          <span id="player-set" class="font-label-caps text-label-caps text-gold-mid mb-1">Set 1 · Marquee</span>
+          <h2 id="player-name" class="font-headline-md text-2xl font-black text-on-surface mb-2 uppercase tracking-tight">VIRAT KOHLI</h2>
+          <div class="flex gap-2">
+            <span id="player-role" class="px-2 py-0.5 rounded bg-surface-raised border border-border-default font-label-caps text-label-caps text-[9px] uppercase font-bold text-primary">BATSMAN</span>
+            <span id="player-nation" class="px-2 py-0.5 rounded bg-surface-raised border border-border-default font-label-caps text-label-caps text-[9px] uppercase font-bold text-tertiary">IND</span>
+            <span id="player-last-team-val" class="px-2 py-0.5 rounded bg-surface-raised border border-border-default font-label-caps text-label-caps text-[9px] uppercase font-bold text-white">RCB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div id="stats-grid" class="bg-surface-raised border border-border-default rounded-xl p-4 grid grid-cols-3 gap-2 flex-shrink-0 text-center">
+        <div class="flex flex-col">
+          <span id="stat-matches-label" class="font-label-caps text-label-caps text-on-surface-variant text-[10px]">RUNS</span>
+          <span id="stat-matches" class="font-stat-value text-stat-value text-primary font-bold">-</span>
+        </div>
+        <div class="flex flex-col border-l border-r border-border-default">
+          <span id="stat-runs-label" class="font-label-caps text-label-caps text-on-surface-variant text-[10px]">AVG</span>
+          <span id="stat-runs" class="font-stat-value text-stat-value text-primary font-bold">-</span>
+        </div>
+        <div class="flex flex-col">
+          <span id="stat-batting-label" class="font-label-caps text-label-caps text-on-surface-variant text-[10px]">SR</span>
+          <span id="stat-batting" class="font-stat-value text-stat-value text-primary font-bold">-</span>
+        </div>
+      </div>
+
+      <!-- AI Fair Value estimate -->
+      <div class="bg-surface-dim border border-border-strong rounded-xl p-4 flex items-center justify-between mt-auto">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">insights</span>
+          <span class="font-label-caps text-label-caps text-on-surface-variant text-xs font-semibold">AI Fair Value</span>
+        </div>
+        <span id="player-fair-value" class="font-stat-value text-stat-value text-secondary text-sm font-bold">₹10-₹16 Cr</span>
+      </div>
+    </section>
+
+    <!-- Center Column: Live Auction Block / Active Stage -->
+    <section id="pane-stage" class="flex-1 flex flex-col items-center justify-center relative border border-border-strong rounded-xl bg-surface bg-opacity-50 p-8 shadow-[inset_0_0_50px_rgba(0,75,160,0.08)]">
+      <!-- Right-To-Match (RTM) Notification Banner -->
+      <div id="rtm-banner" class="hidden absolute top-6 left-1/2 -translate-x-1/2 bg-rtm-purple/20 border border-rtm-purple text-rtm-purple px-6 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2 backdrop-blur-sm shadow-lg">
+        <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+        <span id="rtm-banner-text">RCB HAS RTM OPTION</span>
+      </div>
+
+      <!-- Current Leader Info -->
+      <div class="flex flex-col items-center gap-4 mb-6">
+        <div class="relative">
+          <div id="curr-high-bidder-logo" class="w-20 h-20 rounded-full border-2 border-mi-primary shadow-[0_0_30px_rgba(0,75,160,0.4)] flex items-center justify-center bg-slate-800 text-white font-extrabold text-2xl z-10 relative">MI</div>
+          <div id="curr-high-bidder-ping" class="absolute inset-0 bg-mi-primary rounded-full animate-ping opacity-25"></div>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest text-[11px] font-bold">CURRENT LEADER</span>
+        <span id="curr-high-bidder" class="font-headline-sm text-2xl font-black text-mi-primary uppercase">Mumbai Indians</span>
+      </div>
+
+      <!-- Bid Amount dial -->
+      <div class="flex flex-col items-center mb-8">
+        <span id="curr-high-bid" class="font-stat-display text-5xl md:text-6xl text-gold-mid font-black tracking-tight drop-shadow-[0_0_15px_rgba(244,185,66,0.25)]">₹12.50 Cr</span>
+        <span id="player-base" class="font-stat-value text-on-surface-variant mt-2 text-sm font-semibold">Base Price: ₹2.00 Cr</span>
+      </div>
+
+      <!-- Countdown ring and Interactive Actions -->
+      <div class="flex flex-col items-center gap-6 mt-4 w-full justify-center">
+        
+        <!-- Timer ring -->
+        <div class="relative w-24 h-24 flex items-center justify-center">
+          <svg class="w-full h-full transform -rotate-90 absolute inset-0" viewBox="0 0 100 100">
+            <circle class="stroke-surface-container-high" cx="50" cy="50" fill="none" r="42" stroke-width="5"></circle>
+            <circle id="timerCircle" class="stroke-timer-warn transition-all duration-100 ease-linear" cx="50" cy="50" fill="none" r="42" stroke-dasharray="264" stroke-dashoffset="0" stroke-width="5"></circle>
+          </svg>
+          <span id="timerCircleText" class="font-stat-display text-timer-warn relative z-10 text-2xl font-bold">15</span>
+        </div>
+
+        <!-- Next bid boundary tag -->
+        <div class="flex items-center gap-2 text-xs bg-white/5 border border-white/5 rounded-full px-4 py-1.5">
+          <span class="text-on-surface-variant">Minimum Next Bid:</span>
+          <span id="next-bid-target" class="text-gold-mid font-mono-data font-bold">₹12.75 Cr</span>
+        </div>
+
+        <!-- Active Room Bidders -->
+        <div class="flex flex-col items-center gap-1.5 my-1">
+          <span class="font-label-caps text-[9px] text-on-surface-variant uppercase tracking-wider">Active Room Bidders</span>
+          <div id="active-bidders-list" class="flex flex-wrap justify-center gap-1.5 max-w-[400px]">
+            <!-- Dynamically filled with pills -->
+          </div>
+        </div>
+
+        <!-- User controls (toggled on user turns) -->
+        <div id="user-bid-panel" class="hidden flex gap-4 transition-all duration-200">
+          <button id="btn-user-bid" class="bg-primary-container text-on-primary-container font-stat-value text-sm py-3 px-8 rounded-lg hover:bg-primary transition-all duration-150 min-w-[140px] uppercase font-black shadow-lg shadow-primary-container/20 pulse-border">
+            👍 Place Bid
+          </button>
+          <button id="btn-user-pass" class="bg-surface-raised border border-border-strong text-danger font-stat-value text-sm py-3 px-8 rounded-lg hover:bg-surface-bright transition-all duration-150 min-w-[140px] uppercase font-black">
+            👎 Pass Turn
+          </button>
+        </div>
+
+        <div id="ai-bid-panel" class="font-label-caps text-[11px] text-on-surface-variant italic py-3 opacity-65 tracking-wider">
+          AI simulation is active. Watch agent commentaries in the ledger.
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: Ledger (Bid History) & Squad lists (260px) -->
+    <section id="pane-ledger" class="w-[260px] flex flex-col h-full gap-4">
+      
+      <!-- Bid History Feed -->
+      <div class="flex-[3] bg-surface-container-low border border-border-default rounded-xl flex flex-col overflow-hidden">
+        <div class="p-3 border-b border-border-default bg-surface-container flex justify-between items-center">
+          <span class="font-label-caps text-label-caps text-xs text-white font-bold">Bid History</span>
+          <!-- Thinking indicator inside ledger header -->
+          <div id="thinking-indicator" class="thinking-loader hidden flex items-center gap-1">
+            <div class="spinner w-3 h-3 border-2 border-primary/20 border-t-primary rounded-full animate-spin"></div>
+            <span id="thinking-franchise" class="text-[9px] text-primary italic font-medium">MI thinking...</span>
+          </div>
+        </div>
+        <div id="bidding-log" class="flex-1 flex flex-col p-2 gap-1 overflow-y-auto no-scrollbar max-h-[350px]">
+          <div class="log-empty-state">
+            <p>Awaiting bids...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Purses list -->
+      <div class="flex-[2] bg-surface-container-low border border-border-default rounded-xl flex flex-col overflow-hidden">
+        <div class="p-3 border-b border-border-default bg-surface-container flex justify-between items-center">
+          <span class="font-label-caps text-label-caps text-xs text-white font-bold">Purses Overview</span>
+        </div>
+        <div id="top-purses-list" class="flex-1 flex flex-col p-2 gap-2 overflow-y-auto no-scrollbar">
+          <!-- Dynamically filled with purses list -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-View: Squad Manager (Hidden by default, toggled via side nav clicks) -->
+    <section id="pane-squad-manager" class="hidden flex-1 border border-border-strong rounded-xl bg-surface bg-opacity-70 p-6 flex flex-col gap-4 overflow-hidden h-full">
+      <div class="flex justify-between items-center border-b border-border-default pb-3 bg-white/5 p-4 rounded-lg">
+        <div>
+          <h2 id="selected-tab-team-name" class="font-headline-sm text-xl font-black text-primary uppercase">Kolkata Knight Riders</h2>
+          <p id="selected-tab-personality" class="text-[10px] text-on-surface-variant italic mt-0.5 font-medium">Shrewd valuation builders</p>
+        </div>
+        
+        <div class="w-64 flex flex-col gap-1.5">
+          <div class="flex justify-between items-end text-[11px] font-semibold text-on-surface-variant">
+            <span>Purse Left: <strong class="text-white">₹<span id="selected-tab-budget">100.00</span> Cr</strong></span>
+            <span id="selected-tab-budget-pct" class="text-tertiary">100%</span>
+          </div>
+          <div class="w-full h-1.5 bg-surface-raised rounded-full overflow-hidden">
+            <div id="selected-tab-budget-bar" class="h-full bg-gradient-to-r from-primary to-tertiary transition-all duration-300" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1 overflow-y-auto no-scrollbar">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-black/25">
+              <th class="p-3 border-b border-border-default text-on-surface-variant font-bold uppercase tracking-wider">Player Name</th>
+              <th class="p-3 border-b border-border-default text-on-surface-variant font-bold uppercase tracking-wider">Role</th>
+              <th class="p-3 border-b border-border-default text-on-surface-variant font-bold uppercase tracking-wider">Nationality</th>
+              <th class="p-3 border-b border-border-default text-on-surface-variant font-bold uppercase tracking-wider">Price Paid</th>
+            </tr>
+          </thead>
+          <tbody id="selected-tab-roster-body">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- BottomNavBar ( Commentary Ticker ) -->
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex items-center h-12 overflow-hidden px-4 bg-surface-container-highest border-t border-border-strong shadow-lg">
+    <div class="flex items-center gap-4 bg-surface-container-highest z-20 h-full pr-4 border-r border-border-strong flex-shrink-0">
+      <span class="font-label-caps text-label-caps text-secondary text-xs font-bold uppercase tracking-wider">Live Commentary</span>
+      <span class="w-2 h-2 rounded-full bg-danger animate-pulse"></span>
+    </div>
+    <div class="marquee flex-1 text-on-surface h-full flex items-center font-stat-value text-xs">
+      <span id="news-marquee">
+        IPL Auction Arena initialized. Waiting for bidding to begin...
+      </span>
+    </div>
+  </nav>
+
+  <!-- Sold / Unsold Overlays -->
+  <div id="sold-overlay" class="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_#07091A_80%)] opacity-90 backdrop-blur-sm"></div>
+    <div class="relative z-10 flex flex-col items-center transform scale-110">
+      <h1 class="font-headline-lg text-headline-lg text-timer-safe text-[100px] font-black drop-shadow-[0_0_30px_rgba(0,199,135,0.7)] tracking-tighter mb-4">SOLD</h1>
+      <div class="bg-surface-raised border-2 border-timer-safe px-10 py-4 rounded-full flex items-center gap-6 shadow-[0_0_40px_rgba(0,199,135,0.25)]">
+        <span id="sold-player-name" class="font-headline-md text-headline-md text-on-surface text-xl font-bold uppercase">VIRAT KOHLI</span>
+        <span class="material-symbols-outlined text-timer-safe text-xl">arrow_forward</span>
+        <span id="sold-winner-team" class="font-headline-md text-headline-md text-primary text-xl font-black uppercase">RCB</span>
+        <div class="w-px h-6 bg-border-default mx-2"></div>
+        <span id="sold-price" class="font-stat-display text-stat-display text-secondary text-2xl font-black">₹18.00 Cr</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

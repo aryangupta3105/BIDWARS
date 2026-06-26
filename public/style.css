@@ -1,0 +1,223 @@
+/* Custom styling and variables for IPL Auction Broadcast System */
+:root {
+  /* Team Hues (HSL) */
+  --team-mi: 207;   /* Mumbai Indians - Blue */
+  --team-csk: 54;   /* CSK - Yellow */
+  --team-rcb: 356;  /* RCB - Red */
+  --team-kkr: 265;  /* KKR - Purple */
+  --team-dc: 206;   /* DC - Royal Blue */
+  --team-pbks: 0;    /* PBKS - Scarlet Red */
+  --team-rr: 337;   /* RR - Pink */
+  --team-srh: 18;    /* SRH - Orange */
+  --team-gt: 213;   /* GT - Navy */
+  --team-lsg: 173;  /* LSG - Turquoise */
+}
+
+/* Spinner for loading indicator */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(196, 192, 255, 0.2);
+  border-top-color: #c4c0ff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Log Item Styles */
+.log-item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 4px solid #6b7280;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+  animation: slideIn 0.25s ease-out;
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+  border-right: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.log-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.log-team-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.log-action-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+.action-bid {
+  background: rgba(74, 225, 131, 0.12);
+  color: #4ae183;
+  border: 1px solid rgba(74, 225, 131, 0.25);
+}
+
+.action-pass {
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.action-system {
+  background: rgba(251, 188, 0, 0.12);
+  color: #fbbc00;
+  border: 1px solid rgba(251, 188, 0, 0.25);
+}
+
+.log-commentary {
+  font-size: 0.8rem;
+  color: #c7c4d8; /* on-surface-variant */
+  line-height: 1.4;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.log-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #c7c4d8;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 24px;
+  opacity: 0.7;
+}
+
+/* Bidder pill style */
+.bidder-pill {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #c7c4d8;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.bidder-pill.active {
+  opacity: 1;
+  background: rgba(196, 192, 255, 0.1);
+  border-color: #c4c0ff; /* primary */
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(196, 192, 255, 0.2);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Team Borders mapping classes */
+.border-mi { border-left-color: hsl(var(--team-mi), 80%, 55%); }
+.border-csk { border-left-color: hsl(var(--team-csk), 90%, 50%); }
+.border-rcb { border-left-color: hsl(var(--team-rcb), 80%, 50%); }
+.border-kkr { border-left-color: hsl(var(--team-kkr), 65%, 45%); }
+.border-dc { border-left-color: hsl(var(--team-dc), 85%, 50%); }
+.border-pbks { border-left-color: hsl(var(--team-pbks), 80%, 50%); }
+.border-rr { border-left-color: hsl(var(--team-rr), 80%, 55%); }
+.border-srh { border-left-color: hsl(var(--team-srh), 85%, 55%); }
+.border-gt { border-left-color: hsl(var(--team-gt), 70%, 30%); }
+.border-lsg { border-left-color: hsl(var(--team-lsg), 80%, 45%); }
+
+/* Team Text mapping classes */
+.text-mi { color: hsl(var(--team-mi), 90%, 65%); }
+.text-csk { color: hsl(var(--team-csk), 95%, 55%); }
+.text-rcb { color: hsl(var(--team-rcb), 90%, 65%); }
+.text-kkr { color: hsl(var(--team-kkr), 80%, 75%); }
+.text-dc { color: hsl(var(--team-dc), 90%, 65%); }
+.text-pbks { color: hsl(var(--team-pbks), 90%, 65%); }
+.text-rr { color: hsl(var(--team-rr), 90%, 70%); }
+.text-srh { color: hsl(var(--team-srh), 90%, 65%); }
+.text-gt { color: hsl(var(--team-gt), 80%, 70%); }
+.text-lsg { color: hsl(var(--team-lsg), 85%, 65%); }
+
+/* Team Swatch backgrounds */
+.bg-mi { background-color: hsl(var(--team-mi), 80%, 50%); }
+.bg-csk { background-color: hsl(var(--team-csk), 90%, 45%); }
+.bg-rcb { background-color: hsl(var(--team-rcb), 80%, 45%); }
+.bg-kkr { background-color: hsl(var(--team-kkr), 65%, 40%); }
+.bg-dc { background-color: hsl(var(--team-dc), 85%, 45%); }
+.bg-pbks { background-color: hsl(var(--team-pbks), 80%, 45%); }
+.bg-rr { background-color: hsl(var(--team-rr), 80%, 50%); }
+.bg-srh { background-color: hsl(var(--team-srh), 85%, 50%); }
+.bg-gt { background-color: hsl(var(--team-gt), 70%, 30%); }
+.bg-lsg { background-color: hsl(var(--team-lsg), 80%, 40%); }
+
+/* Infinite Marquee Scroll */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* Hide scrollbar for clean broadcast UI */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Active card highlight for top-purses-list cards */
+.active-card {
+  border-color: #ffe088 !important;
+  background-color: rgba(255, 224, 136, 0.08) !important;
+  box-shadow: 0 0 12px rgba(255, 224, 136, 0.15) !important;
+}
+
+/* Glowing pulse border for user turn bid button */
+@keyframes pulse-border {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(26, 95, 232, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(26, 95, 232, 0);
+  }
+}
+.pulse-border {
+  animation: pulse-border 1.5s infinite;
+}
